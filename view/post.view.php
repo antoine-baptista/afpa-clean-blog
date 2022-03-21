@@ -1,5 +1,7 @@
 
         <?php include("view/layout/nav.inc.php"); ?>
+
+        
         <!-- Page Header-->
         <?php include("view/layout/header.inc.php"); ?>
         <!-- Post Content-->

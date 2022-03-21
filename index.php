@@ -1,4 +1,6 @@
+<?php
+        include("model/home.model.php");
 
-        <?php include("model/home.model.php"); ?>
+        $layout_title = 'Titre = ' . $title;
 
-        <?php include("view/home.view.php"); ?>
+        include("view/home.view.php");
