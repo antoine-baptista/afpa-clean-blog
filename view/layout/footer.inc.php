@@ -28,7 +28,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Votre Site Web 2021</div>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Votre Site Web 2022</div>
                     </div>
                 </div>
             </div>
