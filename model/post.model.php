@@ -1,10 +1,12 @@
 <?php
 
+// Post model
+
 include("config/config.inc.php");
 include("model/pdo.inc.php");
 
-	try {
-		$query = "SELECT post_ID, post_date, LEFT(post_content, " . TRONCATURE . ") AS post_content, post_title, post_img_url, display_name, cat_descr
+try {
+		$query = "SELECT post_ID, post_date, post_content, post_title, post_img_url, display_name, cat_descr
 		FROM blog_posts
 
 		INNER JOIN blog_users
@@ -13,7 +15,7 @@ include("model/pdo.inc.php");
 		INNER JOIN blog_categories
 		ON post_category = cat_id
 		
-		ORDER BY post_id DESC";
+		WHERE post_ID = " . $_GET["article"];
 
 		// die($query);
 
@@ -27,7 +29,7 @@ include("model/pdo.inc.php");
         //     // echo "fetch()";
 		// 	// var_dump($data);
         //     echo "<br>" . $data["post_title"] . "<br>";
-        $data = $req->fetchAll();
+        $data = $req->fetch();
 		// var_dump($data);
 		// Terminer la requête en fermant le curseur
 		// $req->closeCursor();
@@ -35,24 +37,3 @@ include("model/pdo.inc.php");
 	catch ( Exception $e ) {
 		die("Erreur MySQL : " . $e->getMessage());
 	}
-
-
-
-
-
-
-
-
-$bg = "assets/img/home-bg.jpg";
-$header_title="Blog de Surf";
-$header_subtitle="Pas pour les midinettes !";
-$content = "";
-
-
-
-
-
-// $titre_art_1 = "La Torche surf";
-// $subtitle_art_1 = "Les surf camps bretons";
-// $author_art_1 = "Antoine B.";
-// $date_art_1 = "18 Mars 2022";

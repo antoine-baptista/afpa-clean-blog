@@ -1,7 +1,7 @@
 <?php
 $bg = "assets/img/contact-bg.jpg";
-$title="Blog de Surf";
-$subtitle="Contactez-moi ... !";
+$header_title="Blog de Surf";
+$header_subtitle="Contactez-moi ... !";
 $content = "";
 
 ?>

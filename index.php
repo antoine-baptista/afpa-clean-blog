@@ -1,6 +1,7 @@
 <?php
         include("model/home.model.php");
-
-        $layout_title = 'Titre = ' . $title;
+        // var_dump($data);
+        
+        $layout_title = 'Titre = ' . $header_title;
 
         include("view/home.view.php");
