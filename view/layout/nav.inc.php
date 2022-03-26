@@ -1,3 +1,8 @@
+<!--    HTML regroupant le HTML ainsi que la nav avec des classes BOOTSTRAP
+        Ce 'layout' (gabarit) est appelé chaque fois qu'une page
+        ou article s'affiche dans le navigateur
+-->    
+    
     <!DOCTYPE html>
     <html lang="fr">
         <head>
@@ -21,19 +26,41 @@
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="index.php">Du surf à la Torche</a>
+
+
+                <?php if (isset($_GET["notif"])) { ?>
+                <div class="alert alert-success" role="alert">                    
+                    <?php if($_GET["notif"] == 1) echo "Merci de nous avoir contacté."; ?>
+                    <?php if($_GET["notif"] == 2) echo "Merci de vous être inscrit."; ?>
+                </div>
+                
+                <?php } ?>
+                <?php if (isset($_GET["erreur"])) { ?>
+                <div class="alert alert-danger" role="alert">                    
+                    <?php if($_GET["erreur"] == 1) echo "Désolé, votre demande de contact a échoué."; ?>
+                    <?php if($_GET["erreur"] == 2) echo "Désolé, votre inscription a échoué."; ?>
+                </div>
+                
+                <?php } ?>
+
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
+
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.php">Accueil</a></li>
                         
                         <!-- <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.php?article=1">Article 1</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.php?article=2">Article 2</a></li> -->
+
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.php">Contact</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.php">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="feedback.php">Feedback</a></li>
                     </ul>
                 </div>
+
             </div>
         </nav>

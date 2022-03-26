@@ -1,3 +1,8 @@
+<!--    HTML conernant le footer avec des classes BOOTSTRAP
+        Ce 'layout' (gabarit) est appelé chaque fois qu'une page
+        ou article s'affiche dans le navigateur
+-->
+
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -28,7 +33,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Votre Site Web 2022</div>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Fanzine de Breizh 2021-2022</div>
                     </div>
                 </div>
             </div>

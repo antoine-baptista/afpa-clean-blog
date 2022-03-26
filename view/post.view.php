@@ -1,8 +1,7 @@
-
+        <!-- inclusion de la 'nav' qui rassemble la déclaration du code HTML ainsi que la 'nav' -->
         <?php include("view/layout/nav.inc.php"); ?>
-
-        
         <!-- Page Header-->
+        <!-- inclusion du 'header' -- textes et image de fond -->
         <?php include("view/layout/header.inc.php"); ?>
         <!-- Post Content-->
         <article class="mb-4">
@@ -24,6 +23,7 @@
             </div>
         </article>
         <!-- Footer-->
+        <!-- inclusion du 'footer' on va rechercher le layout (gabarit) qui va bien -->
         <?php include("view/layout/footer.inc.php"); ?>
         <!-- Bootstrap core JS-->
         

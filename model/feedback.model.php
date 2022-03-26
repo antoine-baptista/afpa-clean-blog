@@ -13,16 +13,9 @@ include("model/pdo.inc.php");
 		// FROM d'où proviennent les données
 		// INNER JOIN tables vers lesquelles on fait les jointures
 		// ORDER BY ordre avec lequel on souhaite afficher les datas
-		$query = "SELECT post_ID, post_date, LEFT(post_content, " . TRONCATURE . ") AS post_content, post_title, post_img_url, display_name, cat_descr
-		FROM blog_posts
-
-		INNER JOIN blog_users
-		ON post_author = ID
-
-		INNER JOIN blog_categories
-		ON post_category = cat_id
-		
-		ORDER BY post_id DESC";
+		$query = "SELECT *
+		FROM blog_contacts
+		ORDER BY contact_ID DESC";
 
 		// ligne commentée, permet de faire du debug du code
 		// die($query);
@@ -60,9 +53,9 @@ include("model/pdo.inc.php");
 	}
 
 // déclaration en dur des variables dont on a besoin dans le header dans la page d'accueil
-$bg = "assets/img/home-bg.jpg";
-$header_title="Blog de Surf";
-$header_subtitle="Pas pour les midinettes !";
+$bg = "assets/img/feedback2-bg.jpg";
+$header_title="Feedback";
+$header_subtitle="Que de commentaires, fioufffff ..";
 $content = "";
 
 // -------------------

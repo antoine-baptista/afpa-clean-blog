@@ -1,3 +1,8 @@
+<!--    HTML conernant le header avec des classes BOOTSTRAP
+        Ce 'layout' (gabarit) est appelé chaque fois qu'une page
+        ou article s'affiche dans le navigateur
+-->
+
 <header class="masthead" style="background-image: url('<?= $bg ?>')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -9,4 +14,4 @@
                     </div>
                 </div>
             </div>
-        </header>
+</header>
