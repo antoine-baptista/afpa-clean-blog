@@ -54,6 +54,7 @@ include("model/pdo.inc.php");
 
 // déclaration en dur des variables dont on a besoin dans le header dans la page d'accueil
 $bg = "assets/img/feedback2-bg.jpg";
+$layout_title="Vos commentaires ...";
 $header_title="Feedback";
 $header_subtitle="Que de commentaires, fioufffff ..";
 $content = "";
